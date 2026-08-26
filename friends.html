@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forever Friends — Home</title>
+    <title>Forever Friends — Our Friends</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <div id="loader">
@@ -27,12 +23,12 @@
                 <i class="fa-solid fa-heart-pulse"></i> Forever Friends
             </a>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="story.html" class="nav-link">Our Story</a></li>
                 <li><a href="memories.html" class="nav-link">Memories</a></li>
                 <li><a href="gallery.html" class="nav-link">Gallery</a></li>
                 <li><a href="events.html" class="nav-link">Events</a></li>
-                <li><a href="friends.html" class="nav-link">Friends</a></li>
+                <li><a href="friends.html" class="nav-link active">Friends</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             <a href="memories.html" class="btn btn-primary nav-btn">View Memories</a>
@@ -42,30 +38,49 @@
         </div>
     </nav>
 
-    <section class="hero" id="home">
-        <div class="container hero-grid">
-            <div class="hero-text reveal">
-                <h1 class="hero-title">Together We Create <span>Memories</span></h1>
-                <p class="hero-subtitle">Every friendship has a story. Every photo captures a moment. Welcome to our
-                    little collection of unforgettable memories.</p>
-                <div class="hero-btns">
-                    <a href="memories.html" class="btn btn-primary">Explore Memories <i
-                            class="fa-solid fa-arrow-right"></i></a>
-                    <a href="gallery.html" class="btn btn-secondary">View Gallery</a>
+    <div class="page-header">
+        <h1 class="serif-font">Meet The Friends</h1>
+    </div>
+
+    <section class="section-padding friends" id="friends">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">The Crew</span>
+                <h2 class="section-title">Meet The Friends</h2>
+                <p class="section-desc">The unique personalities that make every moment extra special.</p>
+            </div>
+
+            <div class="friends-grid">
+                <div class="friend-card reveal">
+                    <div class="friend-avatar">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80" alt="Alex">
+                    </div>
+                    <h3 class="friend-name">Alex</h3>
+                    <div class="friend-role">The Photographer</div>
+                    <p class="friend-desc">Always ready to capture every important moment. Never lets a good sunset or aesthetic coffee pass by without a shot.</p>
+                    <div class="friend-activity"><i class="fa-solid fa-camera"></i> Taking Photos</div>
+                </div>
+
+                <div class="friend-card reveal">
+                    <div class="friend-avatar">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" alt="Dara">
+                    </div>
+                    <h3 class="friend-name">Dara</h3>
+                    <div class="friend-role">The Adventurer</div>
+                    <p class="friend-desc">Always looking for the next exciting place to explore. Master map navigator and initiator of spontaneous road trips.</p>
+                    <div class="friend-activity"><i class="fa-solid fa-compass"></i> Hiking & Travel</div>
+                </div>
+
+                <div class="friend-card reveal">
+                    <div class="friend-avatar">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80" alt="Lisa">
+                    </div>
+                    <h3 class="friend-name">Lisa</h3>
+                    <div class="friend-role">The Funny One</div>
+                    <p class="friend-desc">The person who can make everyone laugh no matter what. Brings positive energy, hilarious jokes, and joy everywhere.</p>
+                    <div class="friend-activity"><i class="fa-solid fa-face-smile"></i> Making Jokes</div>
                 </div>
             </div>
-            <div class="hero-image-wrapper reveal">
-                <div class="hero-image-card">
-                    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1000&q=80"
-                        alt="Group of friends">
-                </div>
-            </div>
-        </div>
-        <div class="scroll-down">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
-            <span>Scroll Down</span>
         </div>
     </section>
 
@@ -76,8 +91,7 @@
                     <a href="index.html" class="logo" style="color: var(--white);">
                         <i class="fa-solid fa-heart-pulse"></i> Forever Friends
                     </a>
-                    <p class="footer-desc">A digital space dedicated to celebrating long-lasting friendships,
-                        unforgettable journeys, and timeless moments.</p>
+                    <p class="footer-desc">A digital space dedicated to celebrating long-lasting friendships, unforgettable journeys, and timeless moments.</p>
                 </div>
                 <div>
                     <h4 class="footer-title">Quick Links</h4>
@@ -110,5 +124,4 @@
 
     <script src="script.js"></script>
 </body>
-
 </html>

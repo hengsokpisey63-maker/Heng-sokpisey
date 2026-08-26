@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forever Friends — Home</title>
+    <title>Forever Friends — Contact</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <div id="loader">
@@ -27,13 +23,13 @@
                 <i class="fa-solid fa-heart-pulse"></i> Forever Friends
             </a>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="story.html" class="nav-link">Our Story</a></li>
                 <li><a href="memories.html" class="nav-link">Memories</a></li>
                 <li><a href="gallery.html" class="nav-link">Gallery</a></li>
                 <li><a href="events.html" class="nav-link">Events</a></li>
                 <li><a href="friends.html" class="nav-link">Friends</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
             </ul>
             <a href="memories.html" class="btn btn-primary nav-btn">View Memories</a>
             <div class="hamburger" id="hamburger">
@@ -42,30 +38,51 @@
         </div>
     </nav>
 
-    <section class="hero" id="home">
-        <div class="container hero-grid">
-            <div class="hero-text reveal">
-                <h1 class="hero-title">Together We Create <span>Memories</span></h1>
-                <p class="hero-subtitle">Every friendship has a story. Every photo captures a moment. Welcome to our
-                    little collection of unforgettable memories.</p>
-                <div class="hero-btns">
-                    <a href="memories.html" class="btn btn-primary">Explore Memories <i
-                            class="fa-solid fa-arrow-right"></i></a>
-                    <a href="gallery.html" class="btn btn-secondary">View Gallery</a>
+    <div class="page-header">
+        <h1 class="serif-font">Contact Us</h1>
+    </div>
+
+    <section class="section-padding contact" id="contact">
+        <div class="container">
+            <div class="contact-box reveal">
+                <div class="section-header" style="margin-bottom: 30px;">
+                    <span class="section-subtitle">Share Memories</span>
+                    <h2 class="section-title">Let’s Create More Memories</h2>
+                    <p class="section-desc">Have a special memory or photo to share? Add it to our digital album collection.</p>
                 </div>
+
+                <form id="memoryForm" onsubmit="event.preventDefault(); alert('Thank you for sharing your memory! It has been submitted.');">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group full">
+                            <label for="title">Memory Title</label>
+                            <input type="text" id="title" class="form-control" placeholder="e.g. Summer Bonfire" required>
+                        </div>
+                        <div class="form-group full">
+                            <label for="message">Message / Story</label>
+                            <textarea id="message" class="form-control" placeholder="Describe the memory..." required></textarea>
+                        </div>
+                        <div class="form-group full">
+                            <label>Upload Photo</label>
+                            <label class="file-upload-label">
+                                <i class="fa-solid fa-cloud-arrow-up"></i>
+                                <div>Click to select a photo to upload</div>
+                                <input type="file" style="display: none;" accept="image/*">
+                            </label>
+                        </div>
+                        <div class="form-group full" style="text-align: center; margin-top: 10px;">
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Memory</button>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <div class="hero-image-wrapper reveal">
-                <div class="hero-image-card">
-                    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1000&q=80"
-                        alt="Group of friends">
-                </div>
-            </div>
-        </div>
-        <div class="scroll-down">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
-            <span>Scroll Down</span>
         </div>
     </section>
 
@@ -76,8 +93,7 @@
                     <a href="index.html" class="logo" style="color: var(--white);">
                         <i class="fa-solid fa-heart-pulse"></i> Forever Friends
                     </a>
-                    <p class="footer-desc">A digital space dedicated to celebrating long-lasting friendships,
-                        unforgettable journeys, and timeless moments.</p>
+                    <p class="footer-desc">A digital space dedicated to celebrating long-lasting friendships, unforgettable journeys, and timeless moments.</p>
                 </div>
                 <div>
                     <h4 class="footer-title">Quick Links</h4>
@@ -110,5 +126,4 @@
 
     <script src="script.js"></script>
 </body>
-
 </html>
